@@ -1,0 +1,989 @@
+/* Copyright (C) Juan Carlos Tellez Totolhua <losrak@gmail.com> - All rights reserved, GNU/GPL v3 or later (http://www.gnu.org/licenses/gpl.html) */
+
+/* ========================================================================
+   Use this file to add custom CSS easily
+ ========================================================================== */
+
+.redes-sociales-all{
+	margin-top: 5px;
+}
+
+.redes-sociales-all i{
+	font-size: 28px;
+	margin-right: 2px;
+}
+
+.main-title p, .main-title h2{
+	padding: 0px;
+	margin: 0px;
+}
+
+.main-title h2{
+	margin-bottom: 15px;
+}
+
+.main-title p{ font-weight: bold; padding: 8px 12px; border-radius: 15px; display: inline; }
+
+#tm-headerbar{
+	position: absolute;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.98);
+    z-index: 8000;
+    top: 0;
+    left: 0;
+}
+
+#tm-top-a{
+	/*margin-top: -128px;*/
+}
+
+
+.uk-navbar-brand{
+	font-size: 8px!important;
+}
+
+.text-shadow{
+	color: white;
+    text-shadow: 8px 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.title-slide a{
+	text-transform: uppercase!important;
+}
+
+.uk-navbar-nav{
+	
+}
+
+.second-line-head{ border-top: 1px dotted #a8a8a8; margin-top: 15px; }
+
+.title-module{
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.tm-footer .uk-subnav > * > *{
+/*	display: block;!important; */
+	list-style: none;
+	padding: 0px 10px;
+}
+
+.tm-footer .uk-subnav .uk-parent > a{
+	font-weight: bold;
+}
+
+.uk-overlay-background-2{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#757575+0,000000+100 */
+	background: rgba(0, 0, 0, 0.9); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.9) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%,rgba(0, 0, 0, 0.9) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%,rgba(0, 0, 0, 0.9) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(0, 0, 0, 0.9)', endColorstr='rgba(0, 0, 0, 0.1)',GradientType=0 ); /* IE6-9 */
+}
+
+.title-module span{
+	text-transform: none;
+	font-weight: normal;
+}
+
+div.media-left {
+	margin: 0px 10px 0 0;
+	float: left;
+}
+
+.module-events .title a, .noticias .title{
+	font-size: 16px;
+	font-weight: 600;
+	color: #45505e;
+}
+
+.module-events .element-date, .module-events .element-itempublish_up{
+	background: #008ae8;
+	color: white;
+	display: inline;
+	padding: 1px 8px;
+	font-weight: 700;
+}
+
+.module-events p {
+	margin: 0px 0px 10px 0px;
+}
+
+.module-events li{
+	margin-bottom: 20px;
+}
+
+
+h3.uk-panel-title{
+	font-size: 24px;
+	text-transform: uppercase;
+	font-style: italic;
+}
+
+h3.uk-panel-title span{
+	text-transform: none;
+	font-weight: normal;
+	font-size: 18px;
+}
+
+.newslatter{background: #0072cc; min-height: 100px; padding: 55px 0px; color: white;}
+.newslatter i{font-size: 35px;}
+.newslatter h3{color: white;}
+.newslatter .mcSignupModule, .newslatter .mcSignupModule .mcSignupForm {
+	display: flex;
+	justify-content: space-around;
+	align-items: baseline;
+}
+
+.newslatter .mcSignupSubmit{
+	background: white;
+	color: #0072cc;
+	border-radius: 20px;
+	margin-left: 50px;
+	font-weight: bold;
+	text-transform: none!important;
+	font-family: "Montserrat";
+	font-weight: 800;
+	border: 2px solid white;
+	cursor: pointer;
+}
+
+
+.newslatter .submitInt{
+	background: transparent;
+	border: 0px;
+	border-bottom: 1px dotted white;
+	color: white;
+	font-size: 14px;
+}
+
+.newslatter .submitInt::-webkit-input-placeholder{color: rgba(255,255,255,.5);}
+
+.newslatter .submitInt:focus{
+	background: transparent;
+}
+
+.box-hover{
+	
+	box-shadow: 0px 0px 0px rgba(0,0,0,0.15);
+	transition: box-shadow 1s;
+/*  	transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  	z-index: 1; */
+}
+
+.box-hover:hover{
+	box-shadow: 0 6px 25px 0 rgba(0, 0, 0, 0.3);
+	/*
+	box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+	z-index: 9;
+	webkit-transform: scale(1.25, 1.25);
+    transform: scale(1.15, 1.15); */
+}
+
+.tm-block-big{
+	padding-bottom: 80px;
+}
+
+.tm-block-interno{
+	padding-bottom: 40px;
+}
+
+.tm-block-notas{
+	margin-bottom: 15px;
+}
+
+.descubre-uikit{
+	font-size: 1.2em;
+	line-height: 1.6;
+}
+
+.social-media-icons img{
+	padding: 35px 25px 0 25px;
+}
+
+.text-bold{
+	font-weight: bolder;
+}
+
+.experiencias .uk-slideset li{
+	padding-left: 22px;
+	position: relative;
+	overflow: hidden;
+}
+
+
+
+.custom-counter {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.custom-counter li {
+  counter-increment: step-counter;
+  margin-bottom: 10px;
+}
+
+.custom-counter li::before {
+  content: counter(step-counter);
+  margin-right: 5px;
+  margin-bottom: 5px;
+  font-size: 80%;
+  background-color: rgb(238,133,2);
+  color: white;
+  font-weight: bold;
+  padding: 3px 8px;
+  display: inline-block;
+}
+
+.col-left-interior{
+	font-size: .9em
+}
+
+.dot-gallery{
+	position: relative;
+}
+
+.dot-gallery .uk-dotnav li{
+	cursor: pointer;
+	border-radius: 0px!important;
+	margin-right: 15px;
+	border: 3px solid white;
+	
+}
+
+.dot-gallery .uk-dotnav li:hover{ box-shadow: 0px 0px 15px rgba(0,0,0,0.3); }
+
+.text-normal{text-transform: none!important;}
+.button-portada{font-family: "Montserrat"; background: #45505e;  font-weight: bold; border-radius: 25px; font-style: italic; }
+.button-portada:hover{
+	color: #45505e;
+}
+.button-portada a{ padding: 3px 5px; color: white; }
+.button-portada a:hover{ color: #45505e; }
+.margin-interior {margin-top: 145px;}
+
+.uk-offcanvas-bar .uk-nav li{padding-left: 15px;}
+.recomendable-mobile{display: none;}
+
+
+/*** side-bar-elements ***/
+
+.side-bar-elements{
+	font-family: 'Montserrat';
+	font-weight: bold;
+	font-style: italic;
+	position: fixed;
+	color: white;
+	top: 48%;
+	right: -165px;
+	font-size: 18px;
+	z-index: 8004;
+
+}
+
+.side-bar-element{ border-radius: 25px 0 0 25px; margin-bottom: 5px; }
+.side-bar-element a{color: white;}
+
+.side-bar-element-1{
+	background: #0955a0;
+	padding: 5px 10px;
+	transition: .7s ease-in-out;
+	cursor: pointer;
+}
+
+.side-bar-element-2{
+	background: #ee840c;
+	padding: 5px 10px;
+	cursor: pointer;
+	transition: .7s ease-in-out;
+}
+
+.side-bar-elements i{
+	font-size: 20px;
+	padding: 5px;
+}
+
+.side-bar-element-1:hover{
+	transform: translate(-165px,0);
+}
+
+.side-bar-element-2:hover{
+	transform: translate(-120px,0);
+}
+
+/**side bar **/
+
+.googlemapspro{
+	position: relative;
+}
+
+.googlemapspro form{
+	position: absolute;
+	left: 10%;
+	top: 350px;
+}
+
+.googlemapspro form button{
+	background: black;
+	border: 0;
+	color: white;
+	padding: 5px 10px;
+}
+
+.uk-navbar-flip{
+	margin-top: 40px;
+}
+
+#sp-weather-id101{
+	border-left: 1px dotted #a8a8a8;
+	border-right: 1px dotted #a8a8a8;
+	padding: 5px  15px;
+	margin: 0 10px;
+}
+
+/*** menú ***/
+
+.menu-content{
+	width: 35px;
+	overflow: hidden;
+	display: inline-table;
+}
+
+/*** fin menú ***/
+
+
+/** eventos **/
+
+.mas-fechas p{
+	display: none;
+	font-size: 0px;
+	color: white;
+	padding: 0;
+	margin: 0px;
+}
+
+.date-event{
+	font-family: 'Montserrat';
+	font-style: italic;
+	font-weight: bold;
+	text-align: center;
+}
+.date-event .date-day{
+	font-weight: bolder;
+	font-size: 32px;
+}
+
+.date-event .month-day{
+	font-size: 18px;
+}
+
+.title-event{
+	color: black;
+	font-weight: bold;
+}
+.title-event a{
+	color: black;
+	font-weight: bold;
+}
+
+.categories{
+	background: #f8f7f7;
+	margin-bottom: 20px;
+}
+
+.social-icon{font-size: 1.3em;}
+span.municipio{font-size: 16px;}
+
+.culturales, .cultural{
+	border-left: 5px solid #0657a1;
+	transition: color .3s, background .5s ease-in-out;
+}
+
+.seminarios-y-cursos, .conferences-and-courses{
+	border-left: 5px solid #3dbfef;
+	transition: color .3s, background .5s ease-in-out;
+}
+
+.deportivos, .sports{
+	
+	border-left: 5px solid #8cb50f;
+	transition: color .3s, background .5s ease-in-out;
+}
+
+.expo{
+	border-left: 5px solid #a6a6a6;
+	transition: color .3s, background .5s ease-in-out;
+}
+
+.entretenimiento, .entertainment{
+	border-left: 5px solid #a31392;
+	transition: color .3s, background .5s ease-in-out;
+}
+
+#categoriesFilter a{
+	font-family: 'Montserrat';
+	font-weight: bold;
+	font-style: italic;
+}
+
+#categoriesFilter li{cursor: pointer;}
+
+#categoriesFilter li.uk-active{
+	background: white;
+}
+
+.fecha-y-horarios{margin-top: 10px;}
+
+.circle-radio{
+	width: 25px;
+	height: 25px;
+	margin-bottom: 10px;
+}
+
+.element-culturales:before, .element-cultural:before{ 
+	font-family: 'scyt-font' !important;	
+	content: "\e931";
+	color: #0657a1; 
+	font-size: 1.8em;
+}
+.culturales i, .culturales-g i, .cultural i{color: #0657a1;}
+
+.element-todos{color: #3b444f;}
+.element-todos:before{ 
+	font-family: 'scyt-font' !important;
+	content: "\e935";
+	color: #3b444f;
+	font-size: 1.8em;
+}
+
+.element-deportivos:before, .element-sports:before{
+	font-family: 'scyt-font' !important;
+	content: "\e936";
+	color: #8cb50f;
+	font-size: 1.8em;
+}
+.deportivos i, .deportivos-g i, .sports i{color: #8cb50f;}
+
+.element-seminarios-y-cursos:before, .element-conferences-and-courses:before{
+	font-family: 'scyt-font' !important;
+	content: "\e934";
+	color: #3dbfef;
+	font-size: 1.8em;
+}
+.seminarios-y-cursos i, .seminarios-y-cursos-g i, .conferences-and-courses i{color: #3dbfef;}
+
+.element-entretenimiento:before, .element-entertainment:before{
+	font-family: 'scyt-font' !important;
+	content: "\e926";
+	color: #a31392;
+	font-size: 1.8em;
+}
+.entretenimiento i, .entertainment i, .entretenimiento-g i{color: #a31392;}
+
+.element-expo:before{
+	font-family: 'scyt-font' !important;
+	content: "\e91e";
+	color: #a6a6a6;
+	font-size: 1.8em;
+}
+.expo i, .expo-g i{color: #a6a6a6; }
+
+.module-events .item-event{
+	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.module-events .item-event .uk-align-left{
+	margin-bottom: 0px;
+}
+
+.item-event:hover > .culturales{
+	color: white;
+	background: #0657a1;
+}
+
+.item-event:hover > .seminarios-y-cursos{
+	color: white;
+	background: #3dbfef;
+}
+
+.item-event:hover > .deportivos{
+	color: white;
+	background: #8cb50f;
+}
+
+.item-event:hover > .expo{
+	color: white;
+	background: #a6a6a6;
+}
+
+.item-event:hover > .entretenimiento{
+	color: white;
+	background: #a31392;
+}
+
+.details-events i{
+	font-size: 1.6em;
+	color: rgb(238,133,2);
+}
+
+.details-events a{
+	color: #3b444f;
+}
+
+.details-events a:hover{
+	color: #a8a8a8;
+}
+
+/** fin eventos **/
+
+/** hospedaje **/
+
+.hospedaje-restaurante-home .icon-ubicacion{
+	color: #0657a1;
+}
+
+.hospedaje-restaurante-home h3, .vuelos-home h3{
+	text-transform: none;
+}
+
+.hospedaje-restaurante-home .title a{
+	color: #2b2b2b;
+	font-weight: bolder;
+}
+
+.info-item-event{
+	height: 104px;
+}
+
+.hospedaje-restaurante-home .municipio{
+	font-style: italic;
+	font-size: .9em;
+}
+.item-hotel{
+/*	width: 100%;
+	height: 300px; */
+	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+	transition: box-shadow 1s;
+}
+
+.item-hotel:hover{
+	box-shadow: 0 6px 25px 0 rgba(0, 0, 0, 0.3);
+}
+
+.uk-panel-box-custom{
+	background: #fff;
+	color: black;
+}
+
+.uk-panel-box-custom a{
+	color: black;
+}
+
+.item-hotel .category-item{
+	position: absolute;
+	bottom: 15px;
+	left: 20px;
+	display: block;
+}
+
+.item-hotel .category-item i.estrella-activa{ color: #ffd905; }
+._stars{display: inline; margin-left: 10px;}
+.hospedaje-button-home{
+	border-radius: 25px;
+	font-weight: bolder;
+	font-style: italic;
+	text-transform: capitalize;
+	font-family: "Montserrat";
+}
+
+/** fin hospedaje **/
+
+
+/** sitios interes **/
+
+.recursos-uikit-miradores .uk-article{
+	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+	transition: box-shadow 1s;
+	margin-bottom: 25px;
+}
+
+.recursos-uikit-miradores .uk-article:hover{ box-shadow: 0 6px 25px 0 rgba(0, 0, 0, 0.3); }
+
+.recursos-uikit-miradores .uk-article .uk-align-medium-left{
+	margin-bottom: 0px;
+}
+
+.recursos-uikit-miradores .uk-align-left{
+	margin-bottom: 0px;
+}
+
+.recursos-uikit-miradores img {width: 150px;}
+.recursos-uikit-miradores .direccion{
+	display: none;
+}
+.recursos-uikit-miradores .uk-article h3.uk-article-title{
+	margin-top: 0px;
+	font-size: 1.4em;
+	line-height: 1.2;
+	padding: 5px;
+}
+
+.recursos-uikit-miradores .datos-sitios{
+	margin-top: 15px;
+}
+
+.recursos-uikit-miradores .municipio{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+.recursos-uikit-templos-y-ex-conventos .uk-article{
+	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+	transition: box-shadow 1s;
+	margin-bottom: 25px;
+}
+
+.recursos-uikit-templos-y-ex-conventos .uk-article:hover{ box-shadow: 0 6px 25px 0 rgba(0, 0, 0, 0.3); }
+
+.recursos-uikit-templos-y-ex-conventos .uk-article .uk-align-medium-left{
+	margin-bottom: 0px;
+}
+
+.recursos-uikit-templos-y-ex-conventos .uk-align-left{
+	margin-bottom: 0px;
+}
+
+.recursos-uikit-templos-y-ex-conventos img {width: 150px;}
+.recursos-uikit-templos-y-ex-conventos .direccion{
+	display: none;
+}
+.recursos-uikit-templos-y-ex-conventos .uk-article h3.uk-article-title{
+	margin-top: 0px;
+	font-size: 1.4em;
+	line-height: 1.2;
+	padding: 5px;
+}
+
+.recursos-uikit-templos-y-ex-conventos .datos-sitios{
+	margin-top: 15px;
+}
+
+.recursos-uikit-templos-y-ex-conventos .municipio{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+.recursos-uikit-templos-y-ex-conventos h3 a{
+	font-size: 16px;
+	font-style: normal;
+	font-weight: bold;
+	color: black;
+}
+
+/** fin sitios interes **/
+
+/** buscador **/
+
+.buscador-page .item-search-result img{
+	width: 150px;
+}
+
+.item-category-search{
+	font-weight: bold;
+}
+
+/** fin buscador **/
+
+
+/** profesionales **/
+.empresasdeactividad, .business-activity{
+	border-left: 5px solid #ee840c;
+	transition: color .3s, background .5s ease-in-out;
+}
+
+.element-empresasdeactividad:before, .element-business-activity:before{
+	font-family: 'scyt-font' !important;	
+	content: "\e940";
+	color: #ee840c; 
+	font-size: 1.8em;
+}
+.empresasdeactividad i, .business-activity i{color: #ee840c;}
+
+.touroperadores, .tour-operator{
+	border-left: 5px solid #8cb50f;
+	transition: color .3s, background .5s ease-in-out;
+}
+
+.element-touroperadores:before, .element-tour-operator:before{ 
+	font-family: 'scyt-font' !important;	
+	content: "\e940";
+	color: #8cb50f; 
+	font-size: 1.8em;
+}
+.touroperadores i, .tour-operator i{color: #8cb50f;}
+
+.guas, .guides{
+	border-left: 5px solid #3dbfef;
+	transition: color .3s, background .5s ease-in-out;
+}
+
+.element-guas:before, .element-guides:before{
+	font-family: 'scyt-font' !important;	
+	content: "\e939";
+	color: #3dbfef; 
+	font-size: 1.8em;
+}
+.guas i, .guides i{color: #3dbfef;}
+
+
+.item-profesional .title a {
+	color: black;
+	font-weight: bold;
+}
+/** fin profesionales **/
+
+
+/** vuelos **/
+.item-vuelo, .item-autos{
+	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+	transition: box-shadow 1s;
+	border-left: 5px solid #ec8302;
+	padding-left: 10px;
+}
+
+.item-autos{
+	min-height: 150px;
+}
+
+.item-vuelo:hover, .item-autos:hover{box-shadow: 0 6px 25px 0 rgba(0, 0, 0, 0.3);}
+
+.item-vuelo i{
+	color: #ec8302;
+}
+
+.icono-vuelo i{ font-size: 4.8em; padding: 0px 50px; }
+
+.item-vuelo .title a, .item-vuelo .title{
+	font-family: 'Montserrat';
+	font-size: 18px;
+	font-weight: bold;
+	color: black;
+}
+
+.item-autos i{
+	color: #ec8302;
+}
+
+.item-autos .title{ font-size: 18px; font-family: 'Montserrat'; color: black; font-weight: bold; }
+
+.item-autos .title a{
+	font-size: 18px;
+	font-family: 'Montserrat'; 
+	color: black; font-weight: 
+	bold;
+}
+
+/** fin vuelos **/
+
+
+
+/** teléfonos de emergencia **/
+
+.item-emergencia .title a {
+	color: black;
+	font-weight: bold;
+}
+
+.item-emergencia{
+	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+	border-bottom: 3px solid black;
+	transition: box-shadow 1s, border 1s;
+}
+
+.item-emergencia:hover{
+	box-shadow: 0 6px 25px 0 rgba(0, 0, 0, 0.3);
+	border-bottom: 3px solid red;
+}
+
+.datos-generales{
+	font-style: italic;
+	font-size: .9em;
+	font-weight: normal!important;
+}
+
+.datos-generales a{
+	color: #7f7f7f;
+}
+
+/** fin teléfonos de emergencia **/
+
+/** selector de idiomas **/
+
+.mod-languages .chzn-container{
+  width: 90px!important;
+  font-family: "Montserrat";
+  font-weight: bold;
+}
+
+/** fin selector de idomas **/
+
+.filarmonica .content-uikit-filarmonica-5-de-mayo{
+	line-height: 2;
+	font-size: 1.3em;
+}
+
+.experiencias h2{font-size: 60px;}
+.experiencias-uikit h2{line-height: 1.2;}
+.experiencias-uikit p{line-height: 1.8;}
+.uk-invert-title {color: rgba(255,255,255,.6);}
+
+.img-404{
+
+}
+
+.iconos-portada a{
+	font-family: 'Montserrat';
+	color: #45505e;
+	font-weight: bold;
+}
+
+.iconos-portada i{
+	font-size: 4em;
+	color: #9d9d9c;
+	transition: color 1.5s;
+}
+
+.icon-instagram{
+	background: -webkit-linear-gradient(-35deg, #8a3ab9, #cd486b, #fccc63);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.icon-youtube{color: #cd1100;}
+.icon-facebook{color: #2f549e;}
+.icon-twitter{color: #41acf4;}
+.icon-whatsapp{color: #1bd744}
+
+.iconos-portada i:hover{
+	color: #008ae8;
+}
+
+#modal{
+	background: white;
+	z-index: 8005;
+}
+
+#modal .uk-modal-close{
+	padding-top: 46px;
+	font-size: 32px;
+	padding-right: 25px;
+}
+
+.redes-movil{
+	font-size: 28px;
+}
+
+.recursos-uikit i, .hospedaje-uikit i, .profesionales-uikit i, .restaurantes-uikit i{
+	color: #0657a1;
+}
+
+a.icon-facebook{
+	color: #2f549e;
+}
+
+a.icon-twitter{
+	color: #41acf4;	
+}
+
+.iconos-empresas i{
+	background: #f2f2f2;
+	border-radius: 50px;
+	color: #9d9d9c;
+	transition: all 1s;
+}
+
+.empresas-de-actividad:hover > .uk-grid i.icon-informacion-turistica{
+	background: #ee840c;
+	color: white;
+}
+
+.item-profesional:hover > .uk-grid i.icon-guias{
+	background: #3dbfef;
+	color: white;
+}
+
+.tour-operadores:hover > .uk-grid i.icon-informacion-turistica{
+	background: #8cb50f;
+	color: white;
+}
+
+/*** telefonos emergencia ***/
+
+.item-estatales, .item-emergencias{
+	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+	transition: box-shadow 1s;
+	padding-left: 10px;	
+}
+
+.item-estatales{ border-bottom: 4px solid #a31392; min-height: 100px; }
+
+.item-emergencias{ border-bottom: 4px solid #3cc0f0; min-height: 145px; }
+
+.item-estatales:hover, .item-emergencias:hover{box-shadow: 0 6px 25px 0 rgba(0, 0, 0, 0.3);}
+
+
+
+.item-emergencias i.icon-hospitales{ color: #3cc0f0; font-size: 2em }
+
+.item-estatales .title a, .item-emergencias .title a{
+	font-family: 'Montserrat';
+	font-size: 16px;
+	font-weight: 600;
+	color: black;
+}
+
+.item-estatales i{ color: #a31392; font-size: 18px; }
+
+.item-estatales .title, .item-emergencias .title{ font-size: 16px; font-family: 'Montserrat'; color: black; font-weight: 600; }
+
+
+/*** fin de telefonos de emergencia ***/
+
+
+/*** descarga tu guia ***/
+.image-guia{display: inline-block;}
+.image-guia img{ max-height: 300px; display: inline; }
+
+.descargable-list{
+	display: inline-block;
+}
+
+.descargable-list li{
+	background: #dfdfdf;
+	border-radius: 25px;
+	width: 140px;
+	padding: 5px 0px;
+	margin: 5px 0;
+}
+.descargable-list a{color: #45505e; font-style: italic; font-weight: bold; }
+.descargable-list li:hover, .descargable-list li:hover > a {
+	background: #45505e;
+	color: white;
+}
+
+/** fin descarga tu guia **/
+
+
+.rooms-number{
+	position: relative;
+	display: inline-block;
+	background: #f1f1f1;
+	padding: 15px;
+	font-size: 2.1em;
+	font-style: italic;
+	font-weight: bolder;
+}
+

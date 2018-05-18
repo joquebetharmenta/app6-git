@@ -1,0 +1,187 @@
+/* Copyright (C) Juan Carlos Tellez Totolhua <losrak@gmail.com> - All rights reserved, GNU/GPL v3 or later (http://www.gnu.org/licenses/gpl.html) */
+
+jQuery(function($) {
+
+    var config = $('html').data('config') || {};
+    var getUrl = window.location;
+    // Social buttons
+    $('article[data-permalink]').socialButtons(config);
+
+    // Transparent fixed menu
+    var fn              = function(){},
+        win             = $(window),
+        body            = $('body'),
+        headerbar       = $('#tm-headerbar');
+
+    if (window.orientation !== undefined) {
+
+        body.removeClass('tm-navbar-fixed');
+
+    };
+
+    if(body.hasClass('tm-navbar-fixed')) {
+
+        //fixed modes
+
+        if(body.hasClass('tm-navbar-transparent')){
+
+            fn = function(){};
+
+        } else {
+
+            fn = function(){
+
+                setTimeout(function(){
+                    body.css("padding-top", headerbar.outerHeight());
+                    headerbar.css({"position":'fixed'});
+
+                }, 200);
+
+            };
+
+        }
+
+    } else {
+
+        if(body.hasClass('tm-navbar-transparent')){
+
+            fn = function(){};
+
+        } else {
+
+            fn = function(){};
+
+        }
+
+    }
+    //Hidden menú
+    $( ".item-hidden-menu" ).focus(function() {
+        $( ".item-hidden-menu" ).css({"font-size":"0px"});
+        $( this ).animate({"font-size": "16px"});
+        $("#hidden-menu").css({"height": "auto", "width": "auto"});
+    });
+
+    $( ".item-hidden-menu" ).click(function() {
+        var element = $(this).attr("href");
+        //console.log(element);
+        setTimeout(function(){
+            $(element).find("a").eq(0).focus();
+        });
+    });
+
+    $( "#hidden-menu" ).focusout(function() {
+        $(this).css({"height": "0", "width": "0"});
+    });
+
+    win.on("resize", function(){
+
+        fn();
+
+        return fn;
+
+    }()).on("message", $.UIkit.Utils.debounce(function(e) {
+
+        if (e.originalEvent.data == "customizer-update")  fn();
+
+    }, 150));
+
+    win.on('scroll', function() {
+    });
+
+    //Fancybox
+    var _fancybox = $(".fancybox");
+    if ( _fancybox.length ) _fancybox.fancybox({
+    maxWidth : '960px',
+    autoSize  : true,
+    closeClick  : false,
+    afterClose: function() {
+      //Close all gtooltips if they are open
+      var gtooltip_close = $('.gtooltip .gtooltip-close');
+      if( gtooltip_close.length ) gtooltip_close.click();
+    }
+    });
+
+    //Vertical align full support
+    $('.tm-valign').parent().each(function(){
+        $(this).addClass('tm-valign-parent').height($(this).height());
+    });
+
+    if($('#fullpage').length){
+        $('#fullpage').fullpage({
+            autoScrolling: false,
+            fitToSection: false,
+            verticalCentered: true
+        });
+    }
+
+    var _element = '';
+    if($('.intercambio').length){
+        $('.intercambio').click(function(e){
+            e.preventDefault();
+            $(".tm-totop-scroller").click();
+            _element = $(this).attr("href");
+            $(_element).slideToggle( "slow", function() {
+
+            });
+        })
+    }
+
+    $( ".read-more-mobile" ).click(function() {
+        $_texto = $.trim($( ".read-more-mobile" ).html());
+        _vl = $.trim($( ".read-more-mobile" ).attr("title"));
+        $_values = _vl.split("-");
+        console.log($_values[0]);
+        $( ".recomendable-mobile" ).fadeToggle( "slow", "linear" );
+        if($_texto == $_values[0]){
+            $( ".read-more-mobile" ).html($_values[1]);
+        }
+        if($_texto == $_values[1]){
+            $( ".read-more-mobile" ).html($_values[0]);
+        }
+        
+    });
+
+    $('#hamburger').click(function() {
+        $(this).toggleClass('active');
+        if($("#offcanvas").attr("class") == "uk-offcanvas uk-active"){
+            UIkit.offcanvas.hide();
+        }
+    });
+
+    $('#offcanvas.uk-active').click(function() {
+        console.log("no mames!");
+    });
+
+    $(document).keyup(function(e) {
+        if (e.keyCode == 27) {
+            $('#toggle').removeClass('active');
+        }
+    });
+
+
+
+    var trigger = $('#hamburger'),
+    isClosed = true;
+
+    trigger.click(function () {
+      burgerTime();
+    });
+
+    function burgerTime() {
+      if (isClosed == true) {
+        trigger.removeClass('is-open');
+        trigger.addClass('is-closed');
+        isClosed = false;
+      } else {
+        trigger.removeClass('is-closed');
+        trigger.addClass('is-open');
+        isClosed = true;
+      }
+    }
+
+    function genericSocialShare(url){
+        window.open(url,'sharer','toolbar=0,status=0,width=648,height=395');
+        return true;
+    }
+
+});
